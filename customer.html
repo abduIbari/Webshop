@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+</head>
+<body>
+
+<h2>User Information</h2>
+<form action="/update-user" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" name="username" value="sampleUser" required>
+
+    <label for="password">Current Password:</label>
+    <input type="text" name="password" value="samplePassword" required>
+
+    <button type="button" onclick="window.location.href='index.html'">Back to Main Page</button>
+    <button type="submit">Update Information</button>
+</form>
+
+</body>
+</html>
