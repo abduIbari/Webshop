@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Noto Sans Mono", "sans serif";
+    background-color: #6482AD;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-style: bold;
+    color: black;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 13px;
+    padding: 10px;
+    width: 500px;
+    min-height: 250px;
+    background-color: #E2DAD6;
+}
+
+.box h2{
+    font-size: 35px;
+    text-align: center;
+    padding: 7px 0px 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.box p{
+    font-size: 17px;
+    padding: 7px 0px 6px;
+    margin: 10px;
+}
+
+.auth-button{
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin: auto 10px;
+    background-color: #7FA1C3;
+    font-family: inherit;
+}
+
+.material-symbols-outlined{
+    color: black;
+}
+
+.material-symbols-outlined:visited{
+    color: black;
+}
+
+.buttons-foot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    background-color: #E2DAD6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex: 1;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 15px 3px;
+    gap: 20px;
+    text-align: left;
+}

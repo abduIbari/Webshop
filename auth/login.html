@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mystyle.css">
 </head>
 <body>
-    <header>
-        <h2>Log in</h2>
-    </header>   
-
-    <form>
-        <!-- Username Field -->
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <br>
-        <!-- Password Field -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <br>
-        <!-- Buttons -->
-        <a href="registration.html">
-            <button type="button">Register</button>
+    <nav>
+        <a href="/index.html">
+            <span class="material-symbols-outlined">home</span>
         </a>
-            <button type="submit">Sign in</button>
-    </form>
-    <br>
-    Click <a href="/index.html">here</a> to go back to the main page
-
+    </nav>
+    <main>
+        <div class="box">
+            <h2>Log in</h2>
+            <form>
+                <!-- Username Field -->
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <!-- Password Field -->
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <!-- Buttons -->
+                <div class="buttons-foot">
+                    <a href="registration.html">
+                        <button type="button" class="auth-button">Register</button>
+                    </a>
+                    <button type="submit" class="auth-button">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
