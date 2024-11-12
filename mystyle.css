@@ -12,11 +12,38 @@ body{
     background-color: #6482AD;
 }
 
-.logo{
+main{
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex: 1;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 15px 3px;
+    gap: 20px;
+    text-align: left;
+}
+
+nav{
+    background-color: #E2DAD6;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.tomorrow-extralight {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     text-decoration: none;
-    font-size: 30px;
-    font-style: bold;
     color: black;
+    font-size: 40px;
 }
 
 .box{
@@ -56,6 +83,7 @@ body{
     margin: auto 10px;
     background-color: #7FA1C3;
     font-family: inherit;
+    cursor: pointer
 }
 
 .material-symbols-outlined{
@@ -72,27 +100,58 @@ body{
     justify-content: center;
 }
 
-nav{
-    background-color: #E2DAD6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
+.index-page .nav-icons {
+    display: flex; 
+    gap: 30px; 
 }
 
-main{
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    flex: 1;  
-}
-
-form{
+.index-page main{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 15px 3px;
-    gap: 20px;
-    text-align: left;
+    justify-content: flex-start;
 }
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.category-headings{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 0;
+}
+
+.laptop-icon, .phone-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #E2DAD6;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.laptop-icon:hover, .phone-icon:hover{
+    border: black solid 2px;
+}
+
+.category-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    gap: 20px;
+}
+
+
+
+
+
+
