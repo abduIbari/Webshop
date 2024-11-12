@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 12px;
+    text-align: center; 
+}
+
+p {
+    text-align: right; 
+}
+
+table th {
+    background-color: lightgray; 
+}
+
+a {
+    color: blue; 
+    text-decoration: underline; 
+}
+
+a:hover {
+    color: darkblue; 
+    text-decoration: none; 
+}
