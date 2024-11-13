@@ -215,6 +215,34 @@ nav{
     line-height: 1.6;
 }
 
+/* New styles for the about page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #E2DAD6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.about-description {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.about-description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
 
 
 
