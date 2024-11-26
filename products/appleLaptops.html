@@ -4,35 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macbooks</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
     <link rel="stylesheet" href="../mystyle.css">
+
+    <!-- Task1 -->
+    <!-- <link rel="stylesheet" href="../firstyle.css"> -->
+
 </head>
 <body>
-    <nav>
-        <a href="../index.html" class="tomorrow-extralight">
-            MBW
-        </a>
-    </nav>
-    <div class="product-details-container">
-        <div>
-            <img src="../images/macbook air m1.jpeg" width="200", height="auto"><br>
-        </div>
-        <span class="product-info">
-             Macbook Air M1 <br>
-            Price: €799.99 <br>
-            <a href="../product details/macbookm1.html">Product details</a> 
-        </span>
+    <header>
+        <nav>
+            <a href="/index.html" class="tomorrow-extralight">
+                MBW
+            </a>
+            <div class="nav-icons">
+                <a href="/customer.html">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+                <a href="../auth/login.html">
+                    <span class="material-symbols-outlined">login</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <div class="product">
+        <a href="../product details/macbookm1.html">
+        <img src="../images/macbook air m1.jpeg" width="200", height="auto">
+        <div class="info">
+            <span class="product-name">Macbook Air M1</span>
+            <p>Price: €799.99</p>
+        </div> 
+    </a>
+    </div>
 
+    <div class="product">
+        <a href="../product details/macbookm2.html">
+        <img src="../images/macbook air m2.jpeg" width="200", height="auto">
+        <div class="info"> 
+            <span class="product-name">Macbook Air M2</span>
+            <p>Price: €999.99</p>
+        </div> 
+        </a>
     </div>
-    <div class="product-details-container">
-        <div>
-            <img src="../images/macbook air m2.jpeg" width="200", height="auto"><br>
-        </div>
-            <span class="product-info">
-               Macbook Air M2 <br>
-               Price: €999.99 <br>
-            <a href="../product details/macbookm2.html">Product details</a> 
-            </span> 
-        </div>  
-    </div>
+</main>
 </body>
 </html>

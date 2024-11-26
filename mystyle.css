@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
-    margin: 0; 
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -12,14 +12,14 @@ body{
     background-color: #6482AD;
 }
 
-main{
+main {
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-    flex: 1;  
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -28,15 +28,24 @@ form{
     text-align: left;
 }
 
-nav{
+nav {
     background-color: #E2DAD6;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 12px;
     width: 100%;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+/* Company logo font */
 .tomorrow-extralight {
     font-family: "Tomorrow", sans-serif;
     font-weight: 200;
@@ -46,10 +55,13 @@ nav{
     font-size: 40px;
 }
 
-.box{
+
+
+/* Used for making the login, registrtation and logout page */
+.box {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     border: 2px solid;
     border-radius: 15px;
@@ -60,8 +72,7 @@ nav{
     min-height: 250px;
     background-color: #E2DAD6;
 }
-
-.box h2{
+.box h2 {
     font-size: 35px;
     text-align: center;
     padding: 7px 0px 6px;
@@ -69,14 +80,16 @@ nav{
     border-bottom: 1px solid black;
     width: 100%;
 }
-
-.box p{
+.box p {
     font-size: 17px;
     padding: 7px 0px 6px;
     margin: 10px;
 }
 
-.auth-button{
+
+
+/* Styling of the buttons used in the forms */
+.auth-button {
     padding: 10px 15px;
     border-radius: 6px;
     font-size: 12px;
@@ -85,48 +98,120 @@ nav{
     font-family: inherit;
     cursor: pointer
 }
-
-.material-symbols-outlined{
-    color: black;
-}
-
-.material-symbols-outlined:visited{
-    color: black;
-}
-
-.buttons-foot{
+.buttons-foot {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.index-page .nav-icons {
-    display: flex; 
-    gap: 30px; 
+
+
+/* login/customer profile icons on the nav bar */
+.material-symbols-outlined {
+    color: black;
+}
+.material-symbols-outlined:visited {
+    color: black;
+}
+.nav-icons {
+    display: flex;
+    gap: 30px;
 }
 
-.index-page main{
+
+/* Structure of the index page */
+.index-page main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.categories{
-    display: flex;
+.index-page h1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+/* Categories and subcategories on the index page */
+.categories {
+    display: flex;;
     flex-direction: column;
     align-items: center;
+    transform: translateY(40%);
     gap: 10px;
     margin: 10px;
 }
-
-.category-headings{
+.category-headings {
     font-size: 25px;
     font-weight: 600;
     margin: 10px;
     padding: 0;
 }
-
-.laptop-icon, .phone-icon{
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.category-item p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+    font-family: "Noto Sans Mono", sans-serif;
+}
+.category-item a {
+    color: black;
+    text-decoration: none;
+}
+.category-item:visited {
+    color: black;
+}
+.subcategories {
+    position: absolute;
+    top: 130px;
+    /* Adjust this value based on your needs */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.category-item:hover .subcategories,
+.category-item:hover .subcategories {
+    visibility: visible;
+    opacity: 1;
+}
+.category-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    gap: 50px;
+}
+.hp-logo {
+    background-image: url("./images/icons8-hp-70.png");
+    background-position: center;
+    background-size: 70px;
+}
+.samsung-logo {
+    background-image: url("./images/icons8-samsung-80.png");
+    background-position: center;
+    background-size: 70px;
+}
+.laptop-icon,
+.phone-icon,
+.apple-icon,
+.samsung-icon,
+.hp-icon {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -137,17 +222,44 @@ nav{
     align-items: center;
     cursor: pointer;
 }
-
-.laptop-icon:hover, .phone-icon:hover{
+.laptop-icon:hover,
+.phone-icon:hover,
+.apple-icon:hover,
+.samsung-icon:hover,
+.hp-icon:hover {
     border: black solid 2px;
 }
 
-.category-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px;
-    gap: 20px;
+
+/* Styling for products page */
+.product {
+    text-align:center;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+}
+.info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.info a {
+    color: black;
+    text-decoration: none;
+}
+.info a:hover {
+    text-decoration: underline;
+}
+.product:hover {
+    transform: scale(1.1); 
+}
+.info .product-name {
+    font-size: 1.2em;  /* Adjust the font size as desired */
+    font-weight: bold; /* Adjust the font weight */
 }
 
 .product-details-container {
@@ -169,9 +281,61 @@ nav{
 }
 
 
+/* styling for product details pages */
+.product-details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #E2DAD6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+    max-width: 300px;
+    border-radius: 10px;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .product-info h1 {
     font-size: 28px;
     margin-bottom: 10px;
+}
+.product-info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.product-info table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+.product-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7FA1C3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.product-info button:hover {
+    background-color: #6482AD;
+}
+.product-description {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 20px;
+}
+.product-description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 .product-info table {
@@ -184,6 +348,39 @@ nav{
     border-bottom: 1px solid #ddd;
 }
 
+/* Styles for the about page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+    gap: 20px;
+    background-color: #E2DAD6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+    max-width: 300px;
+    border-radius: 10px;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.product-info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.product-info table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
 .product-info button {
     padding: 10px 20px;
     border: none;
@@ -193,11 +390,9 @@ nav{
     cursor: pointer;
     font-size: 16px;
 }
-
 .product-info button:hover {
     background-color: #6482AD;
 }
-
 .product-description {
     background-color: white;
     border: 1px solid black;
@@ -207,8 +402,36 @@ nav{
     max-width: 800px;
     margin-top: 20px;
 }
-
 .product-description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+
+/* Styles for the about page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #E2DAD6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.about-description {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.about-description p {
     margin-bottom: 15px;
     line-height: 1.6;
 }
