@@ -403,23 +403,6 @@ a {
     font-weight: bold; /* Adjust the font weight */
 }
 
-.product-details-container {
-    text-align:center;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.5); /* Red shadow for testing */
-
-    border-radius: 8px;
-    width: 300px;
-    height: 400px
-}
-
-.product-info {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-}
 
 
 /* styling for product details pages */
@@ -480,75 +463,6 @@ a {
     margin-bottom: 15px;
     line-height: 1.6;
     color: var(--font);
-}
-
-.product-info table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.product-info table td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Styles for the about page */
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px;
-    gap: 20px;
-    background-color: #E2DAD6;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.product-image {
-    max-width: 300px;
-    border-radius: 10px;
-}
-.product-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.product-info h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-.product-info table {
-    border-collapse: collapse;
-    width: 100%;
-}
-.product-info table td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
-.product-info button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #7FA1C3;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-}
-.product-info button:hover {
-    background-color: #6482AD;
-}
-.product-description {
-    background-color: white;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin-top: 20px;
-}
-.product-description p {
-    margin-bottom: 15px;
-    line-height: 1.6;
 }
 
 
