@@ -1,0 +1,158 @@
+{
+  "Products": [
+      {
+          "pid": 101,
+          "name": "iPhone 15 Pro",
+          "tableDescription": {
+              "Brand": "Apple",
+              "Model name": "iPhone 15 Pro",
+              "Screen Size": "6.1 Inches",
+              "Colour": "Graphite",
+              "Storage": "256GB",
+              "RAM": "8GB",
+              "Chip": "A17 Bionic"
+          },
+          "productDescription": [
+            
+              "The iPhone 15 Pro is a testament to Apple's commitment to innovation and design excellence. Featuring a6.1-inch Super Retina XDR display, it offers stunning visuals with vibrant colors and deep blacks,perfect for any task.",
+              "Powered by the A17 Bionic chip, the iPhone 15 Pro delivers exceptional performance, making multitasking, gaming, and streaming smoother than ever. With 8 GB of RAM and 256 GB of storage, you'll have plenty ofspace for all your apps, photos, and videos.",
+              "The advanced camera system includes a 48 MP main sensor, a 12 MP ultra-wide lens, and a 12 MP telephoto lens, allowing you to capture professional-quality photos and videos in any lighting condition. The 12 MP front camera is perfect for high-quality selfies and video calls.",
+              "With a sleek design, Graphite color, and the latest iOS, the iPhone 15 Pro is not just a smartphone; it's a statement of style and technology. Experience the future of mobile technology with the iPhone 15 Pro."
+          ],
+          "imagePath": "../images/iPhone 15 pro.jpeg",
+          "price": "799.99",
+          "priceId": "15proPrice",
+          "taxPriceId": "15proPriceWithTax",
+          "collectionButtonId": "add15Pro",
+          "category": "Phone",
+          "subcategory": "iPhones"
+      },
+      { 
+        "pid": 102,
+        "name": "iPhone 16 Pro",
+        "tableDescription": {
+            "Brand": "Apple",
+            "Model name": "iPhone 16 Pro",
+            "Screen Size": "6.1 Inches",
+            "Colour": "Midnight Black",
+            "Storage": "512GB",
+            "RAM": "8GB",
+            "Chip": "A18 Bionic"
+        },
+        "productDescription": [
+            "The iPhone 16 Pro represents the pinnacle of Apple's innovation, featuring a sleek design and powerful performance. The 6.1-inch Super Retina XDR display offers stunning visuals with vibrant colors and deep blacks, perfect for any task.",
+            "Powered by the A18 Bionic chip, the iPhone 16 Pro delivers unmatched speed and efficiency, making multitasking, gaming, and streaming smoother than ever. With 8 GB of RAM and 512 GB of storage, you'll have plenty of space for all your apps, photos, and videos.",
+            "The advanced camera system includes a 48 MP main sensor, a 12 MP ultra-wide lens, and a 12 MP telephoto lens, allowing you to capture professional-quality photos and videos in any lighting condition. The 12 MP front camera is perfect for high-quality selfies and video calls.",
+            "With a durable design, Midnight Black color, and the latest iOS, the iPhone 16 Pro is not just a smartphone; it's a statement of style and technology. Experience the future of mobile technology with the iPhone 16 Pro."
+        ],
+        "imagePath": "../images/iPhone 16 pro.jpeg",
+        "price": "999.99",
+        "priceId": "16proPrice",
+        "taxPriceId": "16proPriceWithTax",
+        "collectionButtonId": "add16Pro",
+        "category": "Phone",
+        "subcategory": "iPhones"
+      },
+      { 
+        "pid": 103,
+        "name": "Samsung S24 Ultra",
+        "tableDescription": {
+            "Brand": "Samsung",
+            "Model name": "Galaxy S24 Ultra",
+            "Screen Size": "6.8 Inches",
+            "Colour": "Phantom Black",
+            "Storage": "512GB",
+            "RAM": "12GB",
+            "Chip": "Exynos 2200"
+        },
+        "productDescription": [
+            "The Samsung Galaxy S24 Ultra is the epitome of cutting-edge technology and design. With its expansive 6.8-inch Dynamic AMOLED display, you get stunning visuals with vibrant colors and deep contrasts, perfect for both work and entertainment.",
+            "Powered by the Exynos 2200 chipset, the Galaxy S24 Ultra delivers exceptional performance, whether you're multitasking, gaming, or streaming. The 12 GB of RAM ensures smooth operation, and the 512 GB of storage provides ample space for all your apps, photos, and videos.",
+            "The camera system on the S24 Ultra is second to none, featuring a 108 MP main sensor, a 12 MP ultra-wide lens, and dual 10 MP telephoto lenses, allowing you to capture stunning photos and videos in any condition. The 40 MP front camera is perfect for high-quality selfies and video calls.",
+            "With a sleek design, Phantom Black color, and a robust build, the Samsung Galaxy S24 Ultra is not just a smartphone; it's a statement. Experience the future of mobile technology with the Galaxy S24 Ultra."
+        ],
+        "imagePath": "../images/s24ultra.jpeg",
+        "price": "999.99",
+        "priceId": "s24Price",
+        "taxPriceId": "s24PriceWithTax",
+        "collectionButtonId": "addS24",
+        "category": "Phone",
+        "subcategory": "samsung"
+      },
+      { 
+        "pid": 201,
+        "name": "M1 Macbook Air",
+        "tableDescription": {
+            "Brand": "Apple",
+            "Model name": "M1 Macbook Air",
+            "Screen Size": "13.3 Inches",
+            "Colour": "Space Grey",
+            "Storage": "256GB",
+            "RAM": "8GB",
+            "Chip": "Apple M1"
+        },
+        "productDescription": [
+            "The MacBook Air with Apple’s groundbreaking M1 chip combines powerful performance and portability, redefining what a thin, lightweight laptop can do. With an 8-core CPU and up to 8-core GPU, the MacBook Air delivers up to 3.5x faster processing speeds and 5x faster graphics than previous models—all while maintaining an incredible 18-hour battery life. The fanless design ensures silent operation, perfect for those who need quiet productivity.",
+            "The stunning 13.3-inch Retina display brings vivid colors and sharp text, making everything from photos to documents look better than ever. With support for up to 16GB of unified memory and blazing-fast SSD storage, the MacBook Air handles multitasking and large files effortlessly. Equipped with macOS Big Sur, optimized for the M1, you get lightning-fast responsiveness and access to a vast ecosystem of apps.",
+            "Whether for work, creative pursuits, or everyday browsing, the MacBook Air M1 is the ultimate blend of speed, power, and portability, tailored to your modern lifestyle."
+        ],
+        "imagePath": "../images/macbook air m1.jpeg",
+        "price": "799.99",
+        "priceId": "m1Price",
+        "taxPriceId": "m1PriceWithTax",
+        "collectionButtonId": "addM1",
+        "category": "Laptop",
+        "subcategory": "Macbooks"
+      },
+      { 
+        "pid": 202,
+        "name": "M2 Macbook Air",
+        "tableDescription": {
+            "Brand": "Apple",
+            "Model name": "M2 Macbook Air",
+            "Screen Size": "13.3 Inches",
+            "Colour": "Midnight",
+            "Storage": "256GB",
+            "RAM": "8GB",
+            "Chip": "Apple M2"
+        },
+        "productDescription": [
+            "The MacBook Air with Apple’s groundbreaking M2 chip combines powerful performance and portability, redefining what a thin, lightweight laptop can do. With an 8-core CPU and up to 8-core GPU, the MacBook Air delivers up to 3.5x faster processing speeds and 5x faster graphics than previous models—all while maintaining an incredible 18-hour battery life. The fanless design ensures silent operation, perfect for those who need quiet productivity.",
+            "The stunning 13.3-inch Retina display brings vivid colors and sharp text, making everything from photos to documents look better than ever. With support for up to 16GB of unified memory and blazing-fast SSD storage, the MacBook Air handles multitasking and large files effortlessly. Equipped with macOS Big Sur, optimized for the M1, you get lightning-fast responsiveness and access to a vast ecosystem of apps.",
+            "Whether for work, creative pursuits, or everyday browsing, the MacBook Air M2 is the ultimate blend of speed, power, and portability, tailored to your modern lifestyle."
+        ],
+        "imagePath": "../images/macbook air m2.jpeg",
+        "price": "999.99",
+        "priceId": "m2Price",
+        "taxPriceId": "m2PriceWithTax",
+        "collectionButtonId": "addM2",
+        "category": "Laptop",
+        "subcategory": "Macbooks"
+      },
+      { 
+        "pid": 203,
+        "name": "HP Envy",
+        "tableDescription": {
+            "Brand": "HP",
+            "Model name": "HP Envy 13th Gen",
+            "Screen Size": "13.3 Inches",
+            "Colour": "White",
+            "Storage": "256GB",
+            "RAM": "8GB",
+            "Chip": "Intel 13th generation"
+        },
+        "productDescription": [
+          "Experience the pinnacle of portable performance with the HP Envy 13, equipped with the latest 13th Generation Intel® Core™ processor for lightning-fast speeds and seamless multitasking. Crafted with a sleek, ultra-thin aluminum chassis, this compact powerhouse is designed to deliver top-tier productivity and style, whether you’re at the office, working from a café, or on the go.",
+          "The stunning 13.3-inch Retina display brings vivid colors and sharp text, making everything from photos to documents look better than ever. With support for up to 16GB of unified memory and blazing-fast SSD storage, the HP Envy handles multitasking and large files effortlessly. Equipped with Windows 11, optimized for performance, you get lightning-fast responsiveness and access to a vast ecosystem of apps.",
+          "Whether for work, creative pursuits, or everyday browsing, the HP Envy is the ultimate blend of speed, power, and portability, tailored to your modern lifestyle."
+        ],
+        "imagePath": "../images/HP laptop.jpg",
+        "price": "999.99",
+        "priceId": "hpPrice",
+        "taxPriceId": "hpPriceWithTax",
+        "collectionButtonId": "addHp",
+        "category": "Laptop",
+        "subcategory": "hp"
+      }
+  ]
+}

@@ -1,10 +1,42 @@
+<?php
+$json_data = file_get_contents("../products.json");
+$products = json_decode($json_data, true);
+$query_pid = $_GET["pid"];
+
+if(isset($query_pid)) {
+    if(empty($query_pid)) {
+        echo "No value fo the parameter!";
+    }
+}
+else {
+    echo "Parameter is missing!";
+}
+
+
+$product = null;
+foreach($products["Products"] as $item){
+    if($item["pid"] == $query_pid){
+        $product = $item; 
+        break;
+    }
+}
+
+if (!$product) {
+    echo "<h1>Product not found</h1>";
+    exit;
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samsung S24 Ultra</title>
+    <title><?php echo $product["name"]; ?></title>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -20,14 +52,14 @@
 <body>
 
     <nav>
-        <a href="/index.html" class="tomorrow-extralight">
+        <a href="../index.php" class="tomorrow-extralight">
             MBW
         </a>
         <div class="nav-icons">
-            <a href="/customer.html">
+            <a href="../customer.php">
                 <span class="material-symbols-outlined">person</span>
             </a>
-            <a href="../auth/login.html">
+            <a href="../auth/login.php">
                 <span class="material-symbols-outlined">login</span>
             </a>
             <i class="material-symbols-outlined" id="toggleDark">contrast</i>
@@ -37,39 +69,39 @@
     <main>
         <div class="product-details-container">
             <div>
-                <img class="product-image" src="\images\s24ultra.jpeg" alt="Samsung S24 Ultra">
+                <img class="product-image" src="<?php echo $product["imagePath"]; ?>" alt=<?php echo $product["name"]; ?>>
             </div>
 
             <div class="product-info">
-                <h1>Samsung S24 Ultra</h1>
+                <h1><?php echo $product["name"]; ?></h1>
                 <table>
                     <tr>
                         <td style="width: 150px;"><strong>Brand</strong></td>
-                        <td>Samsung</td>
+                        <td><?php echo $product["tableDescription"]["Brand"]; ?></td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Model name</strong></td>
-                        <td>Galaxy S24 Ultra</td>
+                        <td><?php echo $product["tableDescription"]["Model name"]; ?></td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Screen Size</strong></td>
-                        <td>6.8 Inches</td>
+                        <td><?php echo $product["tableDescription"]["Screen Size"]; ?></td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Colour</strong></td>
-                        <td>Phantom Black</td>
+                        <td><?php echo $product["tableDescription"]["Colour"]; ?></td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Storage</strong></td>
-                        <td>512 GB</td>
+                        <td><?php echo $product["tableDescription"]["Storage"]; ?></td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>RAM</strong></td>
-                        <td>12 GB</td>
+                        <td><?php echo $product["tableDescription"]["RAM"]; ?></td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Chip</strong></td>
-                        <td>Exynos 2200</td>
+                        <td><?php echo $product["tableDescription"]["Chip"]; ?></td>
                     </tr>
                 </table>
                 <button>Add to cart</button>
@@ -77,25 +109,11 @@
         </div>
 
         <div class="product-description">
-            <p>
-                The Samsung Galaxy S24 Ultra is the epitome of cutting-edge technology and design. With its expansive
-                6.8-inch Dynamic AMOLED display, you get stunning visuals with vibrant colors and deep contrasts,
-                perfect for both work and entertainment.
-            </p>
-            <p>
-                Powered by the Exynos 2200 chipset, the Galaxy S24 Ultra delivers exceptional performance, whether
-                you're multitasking, gaming, or streaming. The 12 GB of RAM ensures smooth operation, and the 512 GB of
-                storage provides ample space for all your apps, photos, and videos.
-            </p>
-            <p>
-                The camera system on the S24 Ultra is second to none, featuring a 108 MP main sensor, a 12 MP ultra-wide
-                lens, and dual 10 MP telephoto lenses, allowing you to capture stunning photos and videos in any
-                condition. The 40 MP front camera is perfect for high-quality selfies and video calls.
-            </p>
-            <p>
-                With a sleek design, Phantom Black color, and a robust build, the Samsung Galaxy S24 Ultra is not just a
-                smartphone; it's a statement. Experience the future of mobile technology with the Galaxy S24 Ultra.
-            </p>
+        <?php if (isset($product["productDescription"]) && is_array($product["productDescription"])): ?>
+            <?php foreach($product["productDescription"] as $description): ?>
+                <p><?php echo $description;?></p>    
+                <?php endforeach; ?>
+                <?php endif; ?>
         </div>
     </main>
 </body>
