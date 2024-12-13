@@ -22,7 +22,7 @@ foreach($products["Products"] as $item){
   }
 }
 
-if (!$filtered_products) {
+if (!$products) {
   echo "<h1>Products not found</h1>";
   exit;
 }
