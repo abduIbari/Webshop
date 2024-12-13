@@ -1,43 +1,9 @@
-<?php
-$json_data = file_get_contents("../products.json");
-$products = json_decode($json_data, true);
-
-$query_subcategory = $_GET["subcategory"];
-
-if(isset($query_subcategory)) {
-  if(empty($query_subcategory)) {
-      echo "No value fo the parameter!";
-      exit;
-  }
-}
-else {
-  echo "Parameter is missing!";
-}
-
-
-$filtered_products = [];
-foreach($products["Products"] as $item){
-  if($item["subcategory"] == $query_subcategory){
-      $filtered_products[] = $item; 
-  }
-}
-
-if (!$products) {
-  echo "<h1>Products not found</h1>";
-  exit;
-}
-
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $filtered_products[0]["subcategory"]; ?></title>
+    <title>Macbooks</title>
     <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -55,14 +21,14 @@ if (!$products) {
 <body class="products-page">
     <header>
         <nav>
-            <a href="../index.php" class="tomorrow-extralight">
+            <a href="/index.html" class="tomorrow-extralight">
                 MBW
             </a>
             <div class="nav-icons">
-                <a href="../customer.php">
+                <a href="/customer.html">
                     <span class="material-symbols-outlined">person</span>
                 </a>
-                <a href="../auth/login.php">
+                <a href="../auth/login.html">
                     <span class="material-symbols-outlined">login</span>
                 </a>
                 <i class="material-symbols-outlined" id="toggleDark">contrast</i>
@@ -71,23 +37,30 @@ if (!$products) {
     </header>
      
     <main>
-      <div class="all-products">
-      <?php foreach ($filtered_products as $product): ?>
+    <div class="all-products">
         <div class="product">
-            <a href="../product details/product.php?pid=<?php echo $product['pid'];?>">
-            <img src="<?php echo $product['imagePath'];?>" width="200", height="auto">
+            <a href="../product details/macbookm1.html">
+            <img src="../images/macbook air m1.jpeg" width="200", height="auto">
             <div class="info">
-                <span class="product-name"><?php echo $product['tableDescription']['Model name'];?></span>
-                <p id="<?php echo $product['priceId'];?>">Price: €<?php echo $product['price'];?></p>
-                <p id="<?php echo $product['taxPriceId'];?>" class="taxPara"></p>
+                <span class="product-name">Macbook Air M1</span>
+                <p id="m1Price">Price: €799.99</p>
+                <p id="m1PriceWithTax" class="taxPara"></p>
             </div> 
         </a>
-        <button id="<?php echo $product['collectionButtonId'];?>" class="auth-button">Add to collection</button>
-        </div>
-        <?php endforeach; ?>
+        <button id="addM1" class="auth-button">Add to collection</button>
         </div>
 
-        
+        <div class="product">
+            <a href="../product details/macbookm2.html">
+            <img src="../images/macbook air m2.jpeg" width="200", height="auto">
+            <div class="info"> 
+                <span class="product-name">Macbook Air M2</span>
+                <p id="m2Price">Price: €999.99</p>
+                <p id="m2PriceWithTax" class="taxPara"></p>
+            </div> 
+        </a>
+        <button id="addM2" class="auth-button">Add to collection</button>
+    </div>
     </div>
     <div class="currency-container">
         <button id="currencyBtn" class="auth-button">Change Currency?</button>

@@ -1,42 +1,10 @@
-<?php
-$json_data = file_get_contents("../products.json");
-$products = json_decode($json_data, true);
-$query_pid = $_GET["pid"];
-
-if(isset($query_pid)) {
-    if(empty($query_pid)) {
-        echo "No value fo the parameter!";
-    }
-}
-else {
-    echo "Parameter is missing!";
-}
-
-
-$product = null;
-foreach($products["Products"] as $item){
-    if($item["pid"] == $query_pid){
-        $product = $item; 
-        break;
-    }
-}
-
-if (!$product) {
-    echo "<h1>Product not found</h1>";
-    exit;
-}
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $product["name"]; ?></title>
+    <title>iPhone 15 Pro</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -54,14 +22,14 @@ if (!$product) {
 <body>
 
     <nav>
-        <a href="../index.php" class="tomorrow-extralight">
+        <a href="/index.html" class="tomorrow-extralight">
             MBW
         </a>
         <div class="nav-icons">
-            <a href="../customer.php">
+            <a href="/customer.html">
                 <span class="material-symbols-outlined">person</span>
             </a>
-            <a href="../auth/login.php">
+            <a href="../auth/login.html">
                 <span class="material-symbols-outlined">login</span>
             </a>
             <i class="material-symbols-outlined" id="toggleDark">contrast</i>
@@ -71,39 +39,39 @@ if (!$product) {
     <main>
         <div class="product-details-container">
             <div>
-                <img class="product-image" src="<?php echo $product["imagePath"]; ?>" alt=<?php echo $product["name"]; ?>>
+                <img class="product-image" src="\images\iPhone 15 pro.jpeg" alt="iPhone 15 Pro">
             </div>
 
             <div class="product-info">
-                <h1><?php echo $product["name"]; ?></h1>
+                <h1>iPhone 15 Pro</h1>
                 <table>
                     <tr>
                         <td style="width: 150px;"><strong>Brand</strong></td>
-                        <td><?php echo $product["tableDescription"]["Brand"]; ?></td>
+                        <td>Apple</td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Model name</strong></td>
-                        <td><?php echo $product["tableDescription"]["Model name"]; ?></td>
+                        <td>iPhone 15 Pro</td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Screen Size</strong></td>
-                        <td><?php echo $product["tableDescription"]["Screen Size"]; ?></td>
+                        <td>6.1 Inches</td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Colour</strong></td>
-                        <td><?php echo $product["tableDescription"]["Colour"]; ?></td>
+                        <td>Graphite</td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Storage</strong></td>
-                        <td><?php echo $product["tableDescription"]["Storage"]; ?></td>
+                        <td>256 GB</td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>RAM</strong></td>
-                        <td><?php echo $product["tableDescription"]["RAM"]; ?></td>
+                        <td>8 GB</td>
                     </tr>
                     <tr>
                         <td style="width: 150px;"><strong>Chip</strong></td>
-                        <td><?php echo $product["tableDescription"]["Chip"]; ?></td>
+                        <td>A17 Bionic</td>
                     </tr>
                 </table>
                 <button onclick="addToCart(<?php echo $product['pid']; ?>, '<?php echo $product['name']; ?>', <?php echo $product['price']; ?>)">
@@ -114,11 +82,26 @@ if (!$product) {
         </div>
 
         <div class="product-description">
-        <?php if (isset($product["productDescription"]) && is_array($product["productDescription"])): ?>
-            <?php foreach($product["productDescription"] as $description): ?>
-                <p><?php echo $description;?></p>    
-                <?php endforeach; ?>
-                <?php endif; ?>
+            <p>
+                The iPhone 15 Pro is a testament to Apple's commitment to innovation and design excellence. Featuring a
+                6.1-inch Super Retina XDR display, it offers stunning visuals with vibrant colors and deep blacks,
+                perfect for any task.
+            </p>
+            <p>
+                Powered by the A17 Bionic chip, the iPhone 15 Pro delivers exceptional performance, making multitasking,
+                gaming, and streaming smoother than ever. With 8 GB of RAM and 256 GB of storage, you'll have plenty of
+                space for all your apps, photos, and videos.
+            </p>
+            <p>
+                The advanced camera system includes a 48 MP main sensor, a 12 MP ultra-wide lens, and a 12 MP telephoto
+                lens, allowing you to capture professional-quality photos and videos in any lighting condition. The 12
+                MP front camera is perfect for high-quality selfies and video calls.
+            </p>
+            <p>
+                With a sleek design, Graphite color, and the latest iOS, the iPhone 15 Pro is not just a smartphone;
+                it's a statement of style and technology. Experience the future of mobile technology with the iPhone 15
+                Pro.
+            </p>
         </div>
     </main>
 </body>

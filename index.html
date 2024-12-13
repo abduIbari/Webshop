@@ -1,9 +1,4 @@
 <!-- Submitted by: Abdul Bari, Syed Abidi, Waddod Ali -->
-<?php
-$json_data = file_get_contents("../products.json");
-$products = json_decode($json_data, true);
-
-?>
 
 
 
@@ -17,7 +12,7 @@ $products = json_decode($json_data, true);
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
     <link rel="stylesheet" href="./mystyle.css">
-    <script src="./task2script.js" defer></script> 
+    <script src="./task2script.js" defer></script>
 
     <!-- Task1 -->
     <!-- <link rel="stylesheet" href="firstyle.css"> -->
@@ -27,15 +22,15 @@ $products = json_decode($json_data, true);
 <body class="index-page">
     <header>
         <nav>
-            <a href="index.php" class="tomorrow-extralight">
+            <a href="/index.html" class="tomorrow-extralight">
                 MBW
             </a>
             <div class="nav-icons">
-                <a href="about.php">About us</a>
-                <a href="customer.php">
+                <a href="about.html">About us</a>
+                <a href="/customer.html">
                     <span class="material-symbols-outlined">person</span>
                 </a>
-                <a href="auth/login.php">
+                <a href="../auth/login.html">
                     <span class="material-symbols-outlined">login</span>
                 </a>
                 <a href="shoppingCart.php" id="cart-link">
@@ -59,47 +54,44 @@ $products = json_decode($json_data, true);
                 <div class="category-item">
                     <p>Laptops</p>
                     <span class="laptop-icon">
-                        <img src="images/laptop icon.png" alt="laptop">
+                        <img src="./images/icons8-laptop-48.png" alt="laptop">
                     </span>
                     <div class="subcategories">
                         <div class="subcategory">
-                            <a href="products/subcategories.php?subcategory=Macbooks">
+                            <a href="products/appleLaptops.html">
                                 <p>Apple</p>
                                 <span class="apple-icon">
-                                    <img src="images/apple logo.png" alt="apple">
+                                    <img src="./images/icons8-apple-logo-50.png" alt="apple">
                                 </span>
                             </a>
                         </div>
                         <div class="subcategory">
-                            <a href="products/subcategories.php?subcategory=hp">
+                            <a href="./products/hp.html">
                                 <p>HP</p>
-                                <span class="hp-logo hp-icon">
-                                    <img src="images/hp logo.png" alt="">
-                                </span>
+                                <span class="hp-logo hp-icon"></span>
                             </a>
                         </div>
                     </div>
                 </div>
+                </a>
                 <div class="category-item">
                     <p>Phones</p>
-                    <span class="laptop-icon">
-                        <img src="images/phone icon.png" alt="phone">
+                    <span class="phone-icon">
+                        <img src="./images/icons8-smartphone-48.png" alt="">
                     </span>
                     <div class="subcategories">
                         <div class="subcategory">
-                            <a href="products/subcategories.php?subcategory=iPhones">
+                            <a href="./products/applePhones.html">
                                 <p>Apple</p>
                                 <span class="apple-icon">
-                                    <img src="images/apple logo.png" alt="">
+                                    <img src="./images/icons8-apple-logo-50.png" alt="">
                                 </span>
                             </a>
                         </div>
                         <div class="subcategory">
-                            <a href="products/subcategories.php?subcategory=samsung">
+                            <a href="./products/samsung.html">
                                 <p>Samsung</p>
-                                <span class="samsung-logo samsung-icon">
-                                <img src="images/samsung icon.png" alt="">
-                                </span>
+                                <span class="samsung-logo samsung-icon"></span>
                             </a>
                         </div>
                     </div>
