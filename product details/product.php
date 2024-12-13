@@ -44,6 +44,7 @@ if (!$product) {
     <link rel="stylesheet" href="../mystyle.css">
     <script src="../task2script.js" defer></script>
 
+
     <!-- Task1 -->
     <!-- <link rel="stylesheet" href="../firstyle.css"> -->
 
@@ -104,7 +105,6 @@ if (!$product) {
                         <td><?php echo $product["tableDescription"]["Chip"]; ?></td>
                     </tr>
                 </table>
-                <button>Add to cart</button>
             </div>
         </div>
 
