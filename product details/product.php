@@ -43,8 +43,6 @@ if (!$product) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
     <link rel="stylesheet" href="../mystyle.css">
     <script src="../task2script.js" defer></script>
-    <script src="../cart.js" defer></script>
-
 
     <!-- Task1 -->
     <!-- <link rel="stylesheet" href="../firstyle.css"> -->
@@ -106,10 +104,7 @@ if (!$product) {
                         <td><?php echo $product["tableDescription"]["Chip"]; ?></td>
                     </tr>
                 </table>
-                <button onclick="addToCart(<?php echo $product['pid']; ?>, '<?php echo $product['name']; ?>', <?php echo $product['price']; ?>)">
-                Add to Cart
-                </button>
-
+                <button>Add to cart</button>
             </div>
         </div>
 
