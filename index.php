@@ -38,10 +38,6 @@ $products = json_decode($json_data, true);
                 <a href="auth/login.php">
                     <span class="material-symbols-outlined">login</span>
                 </a>
-                <a href="shoppingCart.php" id="cart-link">
-                    <span class="material-symbols-outlined">shopping_cart</span>
-                    <span id="cart-count">0</span>
-                </a>
                 <i class="material-symbols-outlined" id="toggleDark">contrast</i>
             </div>
         </nav>
