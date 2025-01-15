@@ -19,7 +19,7 @@
               "The advanced camera system includes a 48 MP main sensor, a 12 MP ultra-wide lens, and a 12 MP telephoto lens, allowing you to capture professional-quality photos and videos in any lighting condition. The 12 MP front camera is perfect for high-quality selfies and video calls.",
               "With a sleek design, Graphite color, and the latest iOS, the iPhone 15 Pro is not just a smartphone; it's a statement of style and technology. Experience the future of mobile technology with the iPhone 15 Pro."
           ],
-          "imagePath": "../images/iPhone 15 pro.jpeg",
+          "imagePath": "../../images/iPhone 15 pro.jpeg",
           "price": "799.99",
           "priceId": "15proPrice",
           "taxPriceId": "15proPriceWithTax",
@@ -45,7 +45,7 @@
             "The advanced camera system includes a 48 MP main sensor, a 12 MP ultra-wide lens, and a 12 MP telephoto lens, allowing you to capture professional-quality photos and videos in any lighting condition. The 12 MP front camera is perfect for high-quality selfies and video calls.",
             "With a durable design, Midnight Black color, and the latest iOS, the iPhone 16 Pro is not just a smartphone; it's a statement of style and technology. Experience the future of mobile technology with the iPhone 16 Pro."
         ],
-        "imagePath": "../images/iPhone 16 pro.jpeg",
+        "imagePath": "../../images/iPhone 16 pro.jpeg",
         "price": "999.99",
         "priceId": "16proPrice",
         "taxPriceId": "16proPriceWithTax",
@@ -71,7 +71,7 @@
             "The camera system on the S24 Ultra is second to none, featuring a 108 MP main sensor, a 12 MP ultra-wide lens, and dual 10 MP telephoto lenses, allowing you to capture stunning photos and videos in any condition. The 40 MP front camera is perfect for high-quality selfies and video calls.",
             "With a sleek design, Phantom Black color, and a robust build, the Samsung Galaxy S24 Ultra is not just a smartphone; it's a statement. Experience the future of mobile technology with the Galaxy S24 Ultra."
         ],
-        "imagePath": "../images/s24ultra.jpeg",
+        "imagePath": "../../images/s24ultra.jpeg",
         "price": "999.99",
         "priceId": "s24Price",
         "taxPriceId": "s24PriceWithTax",
@@ -96,7 +96,7 @@
             "The stunning 13.3-inch Retina display brings vivid colors and sharp text, making everything from photos to documents look better than ever. With support for up to 16GB of unified memory and blazing-fast SSD storage, the MacBook Air handles multitasking and large files effortlessly. Equipped with macOS Big Sur, optimized for the M1, you get lightning-fast responsiveness and access to a vast ecosystem of apps.",
             "Whether for work, creative pursuits, or everyday browsing, the MacBook Air M1 is the ultimate blend of speed, power, and portability, tailored to your modern lifestyle."
         ],
-        "imagePath": "../images/macbook air m1.jpeg",
+        "imagePath": "../../images/macbook air m1.jpeg",
         "price": "799.99",
         "priceId": "m1Price",
         "taxPriceId": "m1PriceWithTax",
@@ -121,7 +121,7 @@
             "The stunning 13.3-inch Retina display brings vivid colors and sharp text, making everything from photos to documents look better than ever. With support for up to 16GB of unified memory and blazing-fast SSD storage, the MacBook Air handles multitasking and large files effortlessly. Equipped with macOS Big Sur, optimized for the M1, you get lightning-fast responsiveness and access to a vast ecosystem of apps.",
             "Whether for work, creative pursuits, or everyday browsing, the MacBook Air M2 is the ultimate blend of speed, power, and portability, tailored to your modern lifestyle."
         ],
-        "imagePath": "../images/macbook air m2.jpeg",
+        "imagePath": "../../images/macbook air m2.jpeg",
         "price": "999.99",
         "priceId": "m2Price",
         "taxPriceId": "m2PriceWithTax",
@@ -146,7 +146,7 @@
           "The stunning 13.3-inch Retina display brings vivid colors and sharp text, making everything from photos to documents look better than ever. With support for up to 16GB of unified memory and blazing-fast SSD storage, the HP Envy handles multitasking and large files effortlessly. Equipped with Windows 11, optimized for performance, you get lightning-fast responsiveness and access to a vast ecosystem of apps.",
           "Whether for work, creative pursuits, or everyday browsing, the HP Envy is the ultimate blend of speed, power, and portability, tailored to your modern lifestyle."
         ],
-        "imagePath": "../images/HP laptop.jpg",
+        "imagePath": "../../images/HP laptop.jpg",
         "price": "999.99",
         "priceId": "hpPrice",
         "taxPriceId": "hpPriceWithTax",

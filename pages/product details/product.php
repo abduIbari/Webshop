@@ -1,5 +1,6 @@
 <?php
-$json_data = file_get_contents("../products.json");
+session_start();
+$json_data = file_get_contents("../../products.json");
 $products = json_decode($json_data, true);
 $query_pid = $_GET["pid"];
 
@@ -26,6 +27,7 @@ if (!$product) {
     exit;
 }
 
+
 ?>
 
 
@@ -41,9 +43,9 @@ if (!$product) {
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
-    <link rel="stylesheet" href="../mystyle.css">
-    <script src="../task2script.js" defer></script>
-
+    <link rel="stylesheet" href="../../styling/mystyle.css">
+    <script src="../../js/darkMode.js" defer></script>
+    <script src="../../js/cart.js" defer></script>
 
     <!-- Task1 -->
     <!-- <link rel="stylesheet" href="../firstyle.css"> -->
@@ -62,6 +64,10 @@ if (!$product) {
             </a>
             <a href="../auth/login.php">
                 <span class="material-symbols-outlined">login</span>
+            </a>
+            <a href="../shoppingCart.php" id="cart-link">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <span id="cart-count">0</span>
             </a>
             <i class="material-symbols-outlined" id="toggleDark">contrast</i>
         </div>
@@ -105,6 +111,17 @@ if (!$product) {
                         <td><?php echo $product["tableDescription"]["Chip"]; ?></td>
                     </tr>
                 </table>
+                <?=
+                    $product_id = $product["pid"];
+                    $product_name = $product["name"];
+                    $product_price = $product["price"];
+                    $product_image_path = $product["imagePath"];
+                ?>
+                <button class="add-to-cart-button" 
+                        data-pid="<?= $product_id ?>" 
+                        data-name="<?= $product_name ?>" 
+                        data-price="<?= $product_price ?>"
+                        data-image-path="<?= $product_image_path ?>">Add to cart</button>
             </div>
         </div>
 

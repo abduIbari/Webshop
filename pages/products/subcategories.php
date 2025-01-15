@@ -1,5 +1,5 @@
 <?php
-$json_data = file_get_contents("../products.json");
+$json_data = file_get_contents("../../products.json");
 $products = json_decode($json_data, true);
 
 $query_subcategory = $_GET["subcategory"];
@@ -42,11 +42,11 @@ if (!$filtered_products) {
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
-    <link rel="stylesheet" href="../mystyle.css">
-    <script src="../taxCalculation.js" defer></script>
-    <script src="../changeCurrency.js" defer></script>
-    <script src="../collectionList.js" defer></script>
-    <script src="../task2script.js" defer></script>
+    <link rel="stylesheet" href="../../styling/mystyle.css">
+    <script src="../../js/taxCalculation.js" defer></script>
+    <script src="../../js/changeCurrency.js" defer></script>
+    <script src="../../js/collectionList.js" defer></script>
+    <script src="../../js/darkMode.js" defer></script>
 
     <!-- Task1 -->
     <!-- <link rel="stylesheet" href="../firstyle.css"> -->
@@ -88,7 +88,7 @@ if (!$filtered_products) {
         </div>
 
         
-    </div>
+
     <div class="currency-container">
         <button id="currencyBtn" class="auth-button">Change Currency?</button>
         <div id="currencyDropdown" class="dropdown-content">
